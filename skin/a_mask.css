@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/*****  
+a_mask.css 
+Version: fl20150606
+Author: Feilong
+Author URI: http://feilong.org
+*****/
+
+
+
+
+/**** reset.css. ONLY use these tags  ****/
+html,body{height:100%}html{overflow-y:hidden}body{ overflow-y:auto;border:0;margin:0}
+h1,h2,h3,h4,h5,h6{padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;font-weight:400}
+strong,b,small{font-weight:400}em,i{font-style:normal}u{text-decoration:none}
+
+:focus,:active{outline:0 none}
+*{-webkit-touch-callout:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-appearance:none;}
+
+/**** fix.css Use carefully ****/
+
+
+.inb{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;}
+.hide{display:none!important}
+.vh{visibility:hidden!important}
+.ht{color:transparent;font:0/0 a;text-shadow:none}
+.ht1{height:100%}
+
+.tal{text-align:left !important}
+.tac{text-align:center !important}
+.tar{text-align:right !important}
+.vat{vertical-align:top!important}
+.vab{vertical-align:bottom !important}
+
+
+.wrap{min-width:320px; height:100%; overflow-y:auto;
+margin-left:auto;margin-right:auto;
+background-color:#f5f9f9; position:relative;}
+
+
+
+
+
+
+
+
+/** mask and shut **/
+.mask{width:100%;height:100%;text-align:center;
+position:fixed;left:0;bottom:0;z-index:888;}
+.maskin{width:90%; text-align: left; 
+position:relative;z-index:888;}
+.maskifr{ display:block;width:100%;z-index:888;}
+.maskbg{width:100%;height:100%;
+position:absolute; left:0; top:0; z-index:1;
+background-color:#000;}
+.maskshut{width:24px;height:24px; line-height:24px;text-align:center;cursor:pointer;
+position:absolute;top:0;right:0;z-index:888;}
+
+
+
+
+
+/* css3 effect */
+.maskifr{transition:height 0.2s ease 0s;
+-moz-transition:height 0.2s ease 0s; /* Firefox 4 */
+-webkit-transition:height 0.2s ease 0s; /* Safari and Chrome */
+-o-transition:height 0.2s ease 0s; /* Opera */
+}
+.maskbg{transition:all 0.3s ease 0s;
+-moz-transition:all 0.3s ease 0s; /* Firefox 4 */
+-webkit-transition:all 0.3s ease 0s; /* Safari and Chrome */
+-o-transition:all 0.3s ease 0s; /* Opera */
+background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;}
+.vh .maskbg{background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
+
+
+
+/*how to reset mask element */
+
+#flmask1 .maskin{ width:60%;}/*how to rewidth the maskin*/
+
+#flmask1 .maskshut{display:none;}/*how to hide the parent close*/
+
+#flmask3 .maskshut{top:-15px;right:-15px; background-color:#fff; border-radius:50%;}/*how to reposition the parent close*/
+
+/*below is not must css */
+#fltomask1{ color:#f00;}
+.maskmod{background-color:#CCC;}
+.maskmod h3{}
+.maskcot1{height:800px; background-color:#099;}
+.tomaskmod2{ background-color:#F66;}
+.maskcot2{height:200px; background-color: #9F0;}
+
+.quxiao{ width:80%; margin:auto; background-color:#F33}
+
+/*end of a_mask.css*/
