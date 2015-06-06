@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="browsermode" content="application"/>
+<meta name="x5-page-mode" content="app"/>
+<link href="skin/a_mask.css" rel="stylesheet" />
+<title>沃阅读APP应用平台</title>
+</head>
+<body id="rdLayout" rel="框架布局页">
+
+
+
+
+
+<iframe id="ziye" src="zi.html" rel="点击按钮在子页面" style="width:200px;height:200px;" frameborder="0"></iframe>
+
+
+<h1>弹层在此父页面</h1>
+
+
+
+
+<div id="flmask3" class="mask vh" rel="弹层在此父页面">
+<div class="inb maskin" rel="iframe或html内容将插入此div">
+</div><i class="inb ht1" rel="对齐方式"></i>
+<i class="maskbg" rel="蒙版背景色"></i></div>
+
+
+
+
+
+<script src="js/jq.js"></script>
+
+
+<script src="js/fltomask.js"></script>
+<script>
+$(function(){
+
+flshutmask('#flmask3','#flmask3',0);//外围手点击关闭
+flshutmask('#flmask3 .maskshut','#flmask3',0);//点击关闭按钮，关闭弹层。
+
+
+
+});
+
+
+
+/*0 jsend-gzfl*/
+</script>
+
+
+</body>
+</html>
+
