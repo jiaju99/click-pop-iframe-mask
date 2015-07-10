@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="initial-scale=1.0, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="skin/a_base.css" rel="stylesheet" />
+<link href="skin/a_mask.css" rel="stylesheet" />
+<title>iframe内的内容4b</title>
+</head>
+<body id="FlPop4b">
+
+
+
+<div class="popmod">
+<h3>我是标题  <a class="popshut" href="#popshut" title="内关闭">X</a></h3>
+</h3>
+
+<div class="popcot">
+
+
+<p>这个pop页，内容很少，没有滚动条，所以右上角可以放 内关闭按钮。</p>
+
+<p class="tac">
+<a class="quxiao" href="#quxiao">取消</a>
+<a class="guanbi" href="#guanbi">关闭</a>
+<a class="guanbi" href="#tuichu">退出</a>
+</p>
+
+<p class="tac"><a class="fanhui" href="a-pop4a.html">链接式返回初始pop页</a></p>
+
+<!--popcot --></div>
+<!--popmod --></div>
+
+
+
+<!--为了更好的网页性能，请学会把js都放在 body闭合 之前！ -->
+<script src="js/jq.js"></script>
+
+
+
+<script src="js/fltomask-dev.js"></script> 
+<script>
+
+
+
+
+
+$(function(){
+
+
+
+
+
+/*一、载入此pop页或旋转屏幕，检查父页蒙版内是否有iframe，如果有，则马上按此pop页内容，修正父页iframe高度 */
+flmaskheight('.popmod','#flmask4',0);//计算.popmod 的高。预置值为0。得到合适高，处理父页蒙版#flmask4
+
+
+
+
+/*二、内关闭。 内关闭总是在pop页 */
+flshutmask('.quxiao,.guanbi,.popshut','#flmask4',1);//点击（.quxiao,.guanbi,.popshut），关闭父页#flmask4
+
+
+
+});/*0*/
+</script>
+
+
+</body>
+</html>
