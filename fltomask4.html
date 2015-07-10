@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="initial-scale=1.0, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="skin/a_base.css" rel="stylesheet" />
+<link href="skin/a_mask.css" rel="stylesheet" />
+<title>非a标签，js生成， 非委托， 必须 onclick</title>
+</head>
+<body id="FlToMask4">
+
+<div class="wrap">
+
+
+
+<div class="para">
+<h1>非a标签，js生成， 非委托， 必须 onclick</h1>
+<p>本演示二维码：<img src="skin/tomask2.png" width="124" height="121"/></p>
+
+
+<hr />
+<h2>一、激发</h2>
+
+
+
+<span data-src="a-pop4a.html" class="fltomask jifa jifa4" onClick="javascript:flfn2015();">某个激发处</span>
+
+
+
+
+<h2>二、蒙版</h2>
+<p>直接作为body最后的子节点。</p>
+
+
+
+<!--para --></div>
+
+
+<!--wrap --></div> 
+
+
+<div class="mask vh" title="蒙版" id="flmask4">
+<div class="inb maskin"></div><i class="inb ht1"></i>
+<i class="maskbg"></i><!--mask --></div>
+
+<script>
+    function hideAddressBar() {
+        window.scrollTo(0, 1);
+    }
+    window.addEventListener('load', function() {
+        window.setTimeout(hideAddressBar, 0);
+    }, false);
+</script>
+
+
+
+<!--为了更好的网页性能，请学会把js都放在 body闭合 之前！ -->
+<script src="js/jq.js"></script>
+
+
+
+<script src="js/fltomask-dev.js"></script>
+<script>
+
+
+//此函数定义
+function flfn2015(){	
+
+
+//你的其它代码
+
+//alert('clicked');
+
+
+	/*以下函数必须包含在$()中*/
+$(function(){
+	
+
+/* 激发 处 */
+//ev.preventDefault();//如无默认行为，可去掉此阻止事件函数
+var tomask4=$('.fltomask');//var tomask=$('#abcdef320');
+fltomask(tomask4,'#flmask4',0);//点击 tomask4。弹出蒙版#flmask4。蒙版在同页，不在父(0)
+
+/* 蒙版 区的关闭。外关闭总是与蒙版在同页。*/
+flshutmask('.maskbg','#flmask4');// 蒙版背景的 外围关闭
+
+
+});/*0*/
+
+
+
+//你的其它代码
+}
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
