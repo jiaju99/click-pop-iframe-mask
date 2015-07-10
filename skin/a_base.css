@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/*****  
+a_base.css 
+Version: ver-20150617-gz
+Author: Feilong
+Author URI: http://feilong.org
+*****/
+
+
+
+
+/**** reset.css. ONLY use these tags  ****/
+/*ios scrolling only on html 
+@media screen and (max-device-width: 480px){html{-webkit-overflow-scrolling:touch;}}*/
+body{border:0;margin:0}
+
+h1,h2,h3,h4,h5,h6{padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;font-weight:400}
+strong,b,small{font-weight:400}em,i{font-style:normal}u{text-decoration:none}
+
+:focus,:active{outline:0 none}
+*{-webkit-touch-callout:none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;
+-webkit-appearance:none;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+
+
+body{color:#222;font-size:14px;
+font-family:"Microsoft Yahei","Simsun",Tahoma,arial,Helvetica,verdana,sans-serif;}
+
+
+/**** fix.css Use carefully ****/
+.inb{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;}/*must*/
+.hide{display:none!important}
+.vh{visibility:hidden!important}
+.ht{color:transparent;font:0/0 a;text-shadow:none}
+.ht1{height:100%}/*must*/
+.oh{ overflow:hidden!important;}
+
+.tal{text-align:left !important}
+.tac{text-align:center !important}
+.tar{text-align:right !important}
+.vat{vertical-align:top!important}/*must*/
+.vab{vertical-align:bottom !important}/*must*/
+
+
+
+
+
+
+
+.wrap{margin-left:auto;margin-right:auto;
+background-color:#f5f9f9; position:relative; z-index:10;}/*must*/
+
+
+
+
+
+
+/**below is NOT must css,only for decoration. 以下不是tomask插件必须的css,仅为装修。 **/
+
+
+.mycode{ padding:10px; border:1px solid #C30; background-color:#FeF; border-radius:2px;}
+.feilong{ color:#00f; font-size:20px}
+.toto{ color:#f0f;font-size:36px}
+.maskmask{ color:#0f0;font-size:36px}
+
+
+/*pop页面公用的装修*/
+
+.popmod h3{ line-height:26px; padding:0 10px; color:#fff;font-size:14px;background-color:#099; position:relative;}
+.popcot{ padding:10px;background-color:#eee;}
+.para{ padding:10px;}
+
+a.guanbi{ line-height:16px;padding:6px; margin-left:6px;
+color:#fff; font-size:12px;text-decoration:none;background-color:#00f}
+a.quxiao{padding:6px; margin-left:6px;color:#fff;text-decoration:none;background-color:#F33; }
+
+a.fanhui{ line-height:16px;padding:6px; margin-left:6px;
+color:#fff; font-size:12px;text-decoration:none;background-color:#f0f}
+
+
+/*例一装修*/
+#jifa1{ color:#f00;}
+.jifa:hover,.jifa:active{ background-color:#F30;}}
+
+/*例二装修*/
+#jifa2{ color:#00f;}
+.link2b{background-color:#F66;}
+.cot2{ height:700px;}
+.popcot2{height:200px; background-color: #9F0;}
+
+
+
+
+/*例三装修*/
+#FlToMask3{ background-color:#eee}
+#jfwinid{width:200px;height:200px;}
+
+#FlToMask3JiFa{ background-color:#ccc}
+#jifa3{ color:#f0f;}
+
+.mask3{ background-color:#3FF}
+
+.jifa4{  line-height:30px;padding:4px; color:#fff; cursor:pointer;background-color:#6C9; border-radius:4px;}
+
+.jifa4.hover{background-color:#0CF}
+
+
+
+
+/*fl-20150610-gz*/
